@@ -17,7 +17,7 @@ const movie = sequelize.define("movie", {
         allowNull: false,
     },
     description: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
         allowNull: false,
     },
     duration: {
