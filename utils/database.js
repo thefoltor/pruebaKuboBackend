@@ -5,6 +5,12 @@ const sequelize = new Sequelize("dcnoudk8vmujtp",
 "03efbb0af42a18611736d0c38467d2ae54dc4911233c0249bda8ea1b096c6a64", {
     dialect: "postgres", 
     host: "ec2-3-224-251-47.compute-1.amazonaws.com",
+    dialectOptions: {
+        ssl:{
+            require:true,
+            rejectUnauthorized: false
+        }
+      }
 } );
 
 module.exports = sequelize;
